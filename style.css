@@ -1,0 +1,247 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --primary-red: #ec5242;
+  --dark: #272a31;
+  --light: #d3d3d3;
+
+  --cocogoose: 'COCOGOOSE', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* landing-section */
+
+.landing-section {
+  padding: 5%;
+  position: relative;
+}
+
+.landing-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(/assets/dota2_aegis_bottom_block.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(650%);
+  z-index: -1;
+}
+
+.subtitle {
+  font-weight: 900;
+  margin: 0;
+  font-size: 1.7rem;
+  color: var(--primary-red);
+}
+
+.maintitle {
+  margin: 0;
+  font-family: var(--cocogoose);
+  font-size: 2.1rem;
+  background-image: url(/assets/mood-berlin-velodrom2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.article-title {
+  padding: 10px;
+  background-color: var(--light);
+  border: 1px solid #fff;
+  line-height: 25px;
+}
+
+.date-title {
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.venue-title {
+  font-size: 1.1rem;
+  margin: 15px 0 30px 0;
+}
+
+/* program section */
+
+.program-section {
+  background-image: url(/assets/symbol-scatter-haikei.png);
+  padding: 5%;
+  display: grid;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 30px;
+  margin-inline: 3%;
+  gap: 10px;
+}
+
+.program-card {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding-inline: 30px;
+  backdrop-filter: saturate(150%) brightness(150%);
+  gap: 10px;
+}
+
+.program-icon {
+  width: 20%;
+  height: 70%;
+}
+
+.program-title {
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+.program-details {
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+.program-button {
+  width: 80%;
+  background-color: var(--primary-red);
+  justify-self: center;
+  padding: 25px;
+  font-size: 1.2rem;
+}
+
+/* talent section */
+
+.talents-container {
+  margin-block: 35px;
+  display: grid;
+  padding-inline: 5%;
+  gap: 30px;
+}
+
+.talent-card {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 400px;
+  justify-self: center;
+}
+
+.talent-image {
+  width: 30%;
+  height: min-content;
+}
+
+.talent-info-wrapper {
+  width: 70%;
+  padding-left: 10px;
+}
+
+.talent-info-wrapper h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.talent-info-wrapper hr {
+  width: 10%;
+  margin-inline: 0;
+}
+
+.talent-info-wrapper p {
+  font-size: 0.8rem;
+}
+
+.talent-role {
+  font-style: italic;
+}
+
+.talent-button {
+  width: 100%;
+  background-color: #fff;
+  justify-self: center;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--light);
+}
+
+/* sponsor section */
+
+.sponsor-section {
+  background-color: var(--dark);
+  padding: 30px;
+}
+
+.sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  gap: 7px;
+  row-gap: 25px;
+}
+
+.sponsor-image {
+  height: auto;
+  width: 100px;
+  filter: grayscale(100%);
+}
+
+.sponsor-image:hover {
+  filter: none;
+}
+
+footer {
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  filter: grayscale(100%);
+}
+
+@media (min-width: 768px) {
+  .test {
+    display: none;
+  }
+}
+
+/* utility class */
+
+.text-light {
+  color: #fefefe;
+}
+
+.text-red {
+  color: var(--primary-red);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title-divider {
+  border: 2.3px solid var(--primary-red);
+  border-radius: 3px;
+  width: 65px;
+}
