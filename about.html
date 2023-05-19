@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="app.js"></script>
   </head>
   <body>
     <!-- nav -->
@@ -21,6 +22,25 @@
           <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
         </svg>
       </button>
+      <nav id="primary-navigation" data-visible="false">
+        <ul>
+          <li>
+            <a class="nav-link home-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link about-link" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#overview-section">Overview</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#past-event-section">Past Events</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#sponsor-section">Sponsor</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- main about -->
     <section class="landing-section">
@@ -33,8 +53,8 @@
       </p>
       <p class="text-center link-more">More about <a href="https://esl.com/dota2/" target="_blank">ESL ONE</a></p>
     </section>
-    <!-- logo history -->
-    <section class="overview-section">
+    <!-- overview history -->
+    <section id="overview-section" class="overview-section">
       <h2 class="text-center text-dark">ESL One</h2>
       <hr class="section-title-divider" />
       <p class="overview-details text-center">
@@ -46,7 +66,7 @@
       </a>
     </section>
     <!-- past event -->
-    <section class="past-event-section">
+    <section id="past-event-section" class="past-event-section">
       <h2 class="text-center text-dark">Past Events</h2>
       <hr class="section-title-divider" />
       <p class="text-center">Take a look in the last three ESL ONE</p>
@@ -66,7 +86,7 @@
       </div>
     </section>
     <!-- sponsored -->
-    <section class="sponsor-section">
+    <section id="sponsor-section" class="sponsor-section">
       <h2 class="text-center text-light">Partner</h2>
       <hr class="section-title-divider" />
       <div class="sponsor-container">

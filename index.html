@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="app.js"></script>
   </head>
   <body>
     <!-- nav -->
@@ -21,6 +22,25 @@
           <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
         </svg>
       </button>
+      <nav id="primary-navigation" data-visible="false">
+        <ul>
+          <li>
+            <a class="nav-link home-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link about-link" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#program-section">Program</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#talent-section">Talent</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#sponsor-section">Sponsor</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- landing -->
     <section class="landing-section">
@@ -31,7 +51,7 @@
       <h4 class="venue-title">@ Velodrom Arena, Berlin, Germany</h4>
     </section>
     <!-- program -->
-    <section class="program-section">
+    <section id="program-section" class="program-section">
       <h2 class="text-center text-light">Main Events</h2>
       <hr class="section-title-divider" />
       <div class="program-container">
@@ -92,7 +112,7 @@
       <button class="program-button text-light">Secure Your Seat Now</button>
     </section>
     <!-- talent will be rendered on javascript -->
-    <section>
+    <section id="talent-section" class="talent-section">
       <h2 class="text-center text-dark">Talents</h2>
       <hr class="section-title-divider" />
       <div class="talents-container">
@@ -124,7 +144,7 @@
       </div>
     </section>
     <!-- sponsored -->
-    <section class="sponsor-section">
+    <section id="sponsor-section" class="sponsor-section">
       <h2 class="text-center text-light">Partner</h2>
       <hr class="section-title-divider" />
       <div class="sponsor-container">
