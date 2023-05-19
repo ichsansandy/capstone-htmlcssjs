@@ -16,6 +16,19 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* header */
+header {
+  height: 50px;
+  background: linear-gradient(180deg, #fff -20%, #c3c3c3 100%);
+  padding-left: 5%;
+}
+
+.mobile-menu-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 /* landing-section */
 
 .landing-section {
@@ -27,12 +40,12 @@ body {
   content: '';
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 110%;
+  top: -1%;
   left: 0;
-  background-image: url(/assets/dota2_aegis_bottom_block.jpg);
+  background-image: url(/assets/dota2-aegis.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   filter: grayscale(100%) brightness(650%);
   z-index: -1;
 }
@@ -72,6 +85,15 @@ body {
 .venue-title {
   font-size: 1.1rem;
   margin: 15px 0 30px 0;
+}
+
+.link-more a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.link-more a:hover {
+  color: var(--primary-red);
 }
 
 /* program section */
@@ -192,19 +214,97 @@ body {
   justify-content: center;
   align-items: center;
   padding-block: 20px;
-  gap: 7px;
+  gap: 10px;
   row-gap: 25px;
 }
 
 .sponsor-image {
   height: auto;
-  width: 100px;
+  width: 90px;
   filter: grayscale(100%);
 }
 
 .sponsor-image:hover {
   filter: none;
 }
+
+/* logo history */
+
+.overview-section {
+  background-color: #fff;
+  padding-block: 30px;
+  border-bottom: 1px solid var(--light);
+  display: grid;
+  place-items: center;
+}
+
+.overview-details {
+  box-sizing: border-box;
+  padding: 12px 30px;
+  max-width: 700px;
+}
+
+.overview-image {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+  width: 186px;
+  padding: 15px 25px;
+}
+
+/* Past Event Section */
+
+.past-event-section {
+  padding: 5%;
+}
+
+.past-event-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+.past-event-image {
+  background-color: var(--primary-red);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.past-event-image:hover {
+  background-color: var(--dark);
+}
+
+.past-event-container a span {
+  font-weight: bold;
+  font-family: var(--cocogoose);
+}
+
+.past-event-date {
+  font-size: 1.8rem;
+}
+
+.esl-one-malaysia {
+  background-image: url(assets/esl-one-malaysia-2022-event-preview.jpg);
+}
+
+.dpc-na {
+  background-image: url(assets/esl-one-event-preview-dpc-summer-vs2.jpg);
+}
+
+.esl-one-major-stockholm {
+  background-image: url(assets/esl-one-event-preview-stockholm-2022-vs1.1.jpg);
+}
+
+/* footer */
 
 footer {
   background-color: var(--light);
