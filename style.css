@@ -39,7 +39,6 @@ header {
 }
 
 header nav {
-  /* display: none; */
   display: block;
   position: absolute;
   height: 100vh;
@@ -232,6 +231,7 @@ header nav ul li a:hover {
   display: grid;
   padding-inline: 5%;
   gap: 30px;
+  transition: height 0.7s;
 }
 
 .talent-card {
@@ -239,6 +239,10 @@ header nav ul li a:hover {
   box-sizing: border-box;
   max-width: 400px;
   justify-self: center;
+}
+
+.talent-card[data-visible='true'] {
+  animation: fade-in 700ms forwards;
 }
 
 .talent-image {
@@ -394,7 +398,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .test {
+  .dekstop-hidden {
     display: none;
   }
 }
@@ -421,4 +425,17 @@ footer {
   border: 2.3px solid var(--primary-red);
   border-radius: 3px;
   width: 65px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
