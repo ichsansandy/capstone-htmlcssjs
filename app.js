@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const homeLink = document.querySelector('.home-link');
   const aboutLink = document.querySelector('.about-link');
 
-  if (url === '/index.html') {
+  if (url === '/index.html' || url === '/') {
     homeLink.classList.add('text-red');
     aboutLink.classList.remove('text-red');
   }

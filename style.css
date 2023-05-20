@@ -226,6 +226,10 @@ header nav ul li a:hover {
 
 /* talent section */
 
+.talent-section {
+  display: grid;
+}
+
 .talents-container {
   margin-block: 35px;
   display: grid;
@@ -401,6 +405,44 @@ footer {
   .dekstop-hidden {
     display: none;
   }
+
+  /* program section */
+  .program-container {
+    flex-direction: row;
+  }
+
+  .program-card {
+    width: 20%;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 5px;
+    gap: 0;
+  }
+
+  .program-icon {
+    height: 40%;
+    width: 70px;
+  }
+
+  .program-title {
+    height: 10%;
+    width: auto;
+    font-size: 1.2rem;
+  }
+
+  .program-details {
+    height: 50%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* talent section */
+
+  .talents-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
+    place-self: center;
+  }
 }
 
 /* utility class */
@@ -421,6 +463,10 @@ footer {
   text-align: center;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 .section-title-divider {
   border: 2.3px solid var(--primary-red);
   border-radius: 3px;
@@ -430,6 +476,8 @@ footer {
 .hidden {
   display: none;
 }
+
+
 
 @keyframes fade-in {
   0% {
