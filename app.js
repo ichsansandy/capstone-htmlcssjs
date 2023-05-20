@@ -101,16 +101,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const talentButton = document.querySelector('.talent-button');
   const talentExpanded = talentButton.getAttribute('aria-expanded');
+  const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-  if (talentExpanded !== true) {
+  function handleTabletChange(e) {
     const talentCard = document.querySelectorAll('.talent-card');
-    for (let i = 0; i < talentCard.length; i += 1) {
-      if (i > 1) {
-        talentCard[i].classList.add('hidden');
-        talentCard[i].setAttribute('data-visible', false);
+    if (e.matches && talentExpanded !== true) {
+      for (let i = 0; i < talentCard.length; i += 1) {
+        if (i > 1) {
+          talentCard[i].classList.add('hidden');
+          talentCard[i].setAttribute('data-visible', false);
+        }
+      }
+    } else {
+      for (let i = 0; i < talentCard.length; i += 1) {
+        if (i > 1) {
+          talentCard[i].classList.remove('hidden');
+          talentCard[i].setAttribute('data-visible', true);
+        }
       }
     }
   }
+
+  mediaQuery.addEventListener('change', handleTabletChange);
+
+  handleTabletChange(mediaQuery);
+
   talentButton.addEventListener('click', () => {
     const talentExpanded = talentButton.getAttribute('aria-expanded');
     const talentCard = document.querySelectorAll('.talent-card');
