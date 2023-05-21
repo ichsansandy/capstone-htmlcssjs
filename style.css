@@ -137,6 +137,7 @@ header nav ul li a:hover {
   margin: 0;
   font-family: var(--cocogoose);
   font-size: 2.1rem;
+  line-height: 1;
   background-image: url(/assets/mood-berlin-velodrom2.jpg);
   background-size: cover;
   background-position: center;
@@ -401,14 +402,44 @@ footer {
   filter: grayscale(100%);
 }
 
+.mobile-hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .dekstop-hidden {
     display: none;
   }
 
+  /* landing section */
+  .landing-section {
+    height: 70vh;
+    display: grid;
+    place-items: center;
+  }
+
+ 
+  .landing-section p {
+    width: 60%;
+  }
+
+  .landing-container {
+    max-width: 1000px;
+  }
+
+  .maintitle {
+    font-size: 4rem;
+  }
+
   /* program section */
+  .program-section {
+    display: grid;
+    place-items: center;
+  }
+
   .program-container {
     flex-direction: row;
+    max-width: 1000px;
   }
 
   .program-card {
@@ -476,8 +507,6 @@ footer {
 .hidden {
   display: none;
 }
-
-
 
 @keyframes fade-in {
   0% {
