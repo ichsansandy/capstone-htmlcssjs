@@ -40,7 +40,7 @@ header {
   padding: 0;
 }
 
-#primary-navigation {
+.primary-navigation {
   display: block;
   position: absolute;
   height: 100vh;
@@ -48,7 +48,7 @@ header {
   transition: transform 450ms ease-in 100ms, background-color 400ms ease-in;
 }
 
-#primary-navigation[data-visible='true'] {
+.primary-navigation[data-visible='true'] {
   transform: translateY(0%);
   transition: transform 450ms ease-in, background-color 200ms ease-in 450ms;
   background-color: #e8e9f0;
@@ -58,7 +58,7 @@ header {
   overflow: hidden;
 }
 
-#primary-navigation ul {
+.primary-navigation ul {
   box-sizing: border-box;
   padding-top: 85px;
   padding-left: 7%;
@@ -75,14 +75,14 @@ header {
   border-bottom-right-radius: 40px;
 }
 
-#primary-navigation ul li a {
+.primary-navigation ul li a {
   color: var(--dark);
   text-decoration: none;
   font-weight: 600;
   font-size: 32px;
 }
 
-#primary-navigation ul li a:hover {
+.primary-navigation ul li a:hover {
   color: var(--primary-red);
 }
 
@@ -427,7 +427,7 @@ footer {
     height: 90px;
   }
 
-  #primary-navigation {
+  .primary-navigation {
     position: static;
     display: flex;
     height: 60px;
@@ -438,17 +438,22 @@ footer {
     justify-content: space-between;
   }
 
-  #primary-navigation[data-visible='true'] {
+  .primary-navigation[data-visible='true'] {
     transition: 0;
     background-color: #fff;
   }
 
-  #primary-navigation .logo-link {
+  .primary-navigation .logo-link {
     width: 10%;
-    filter: invert(25%);
+    backdrop-filter: contrast(0.3);
+    padding: 6px 25px;
   }
 
-  #primary-navigation ul {
+  .primary-navigation .logo-link:hover {
+    backdrop-filter: contrast(0.6);
+  }
+
+  .primary-navigation ul {
     padding: 0;
     flex-direction: row;
     height: auto;
@@ -457,12 +462,12 @@ footer {
     border-radius: 0;
   }
 
-  #primary-navigation ul li a {
+  .primary-navigation ul li a {
     font-size: 1.2rem;
     font-weight: 300;
   }
 
-  #primary-navigation button {
+  .primary-navigation button {
     padding: 5px 15px;
     background-color: transparent;
     border: 3px solid var(--primary-red);
@@ -599,7 +604,7 @@ footer {
 }
 
 .text-red {
-  color: var(--primary-red);
+  color: var(--primary-red) !important;
 }
 
 .text-dark {
