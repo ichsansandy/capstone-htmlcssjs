@@ -119,7 +119,7 @@ header {
   height: 110%;
   top: -1%;
   left: 0;
-  background-image: url(/assets/dota2-aegis.jpg);
+  background-image: url(../assets/dota2-aegis.jpg);
   background-size: cover;
   background-position: top;
   filter: grayscale(100%) brightness(650%);
@@ -138,7 +138,7 @@ header {
   font-family: var(--cocogoose);
   font-size: 2.1rem;
   line-height: 1;
-  background-image: url(assets/mood-berlin-velodrom2.jpg);
+  background-image: url(../assets/mood-berlin-velodrom2.jpg);
   background-size: cover;
   background-position: center;
   background-clip: text;
