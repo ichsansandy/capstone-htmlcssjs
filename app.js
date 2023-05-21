@@ -119,6 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
           talentCard[i].setAttribute('data-visible', true);
         }
       }
+      primaryNavigation.setAttribute('data-visible', true);
     }
   }
 

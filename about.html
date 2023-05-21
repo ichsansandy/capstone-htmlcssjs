@@ -10,36 +10,60 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
   </head>
   <body>
     <!-- nav -->
     <header>
-      <button class="mobile-menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <button class="mobile-menu-toggle dekstop-hidden" aria-controls="primary-navigation" aria-expanded="false">
         <svg class="hamburger" viewBox="0 0 100 100" width="50">
           <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
           <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
           <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
         </svg>
       </button>
-      <nav id="primary-navigation" data-visible="false">
+      <nav class="secondary-navigation mobile-hidden">
         <ul>
           <li>
-            <a class="nav-link home-link" href="index.html">Home</a>
+            <a> <i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a> <i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a>English</a>
+          </li>
+          <li>
+            <a>My Page</a>
+          </li>
+          <li>
+            <a>Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="primary-navigation" data-visible="false">
+        <a class="nav-link mobile-hidden logo-link" href="index.html">
+          <img src="assets/ESLOne-logo-intel-white.svg" width="100%" />
+        </a>
+        <ul>
+          <li>
+            <a class="nav-link home-link dekstop-hidden" href="index.html">Home</a>
           </li>
           <li>
             <a class="nav-link about-link" href="about.html">About</a>
           </li>
           <li>
-            <a class="nav-link" href="#overview-section">Overview</a>
+            <a class="nav-link" href="#program-section">Program</a>
           </li>
           <li>
-            <a class="nav-link" href="#past-event-section">Past Events</a>
+            <a class="nav-link" href="#talent-section">Talent</a>
           </li>
           <li>
             <a class="nav-link" href="#sponsor-section">Sponsor</a>
           </li>
         </ul>
+        <button class="nav-link mobile-hidden" href="index.html">DPC Campaign</button>
       </nav>
     </header>
     <!-- main about -->
