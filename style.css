@@ -5,9 +5,7 @@
   --primary-red: #ec5242;
   --dark: #272a31;
   --light: #d3d3d3;
-
   --max-container-dekstop: 1000px;
-
   --cocogoose: 'COCOGOOSE', sans-serif;
 }
 
@@ -166,12 +164,12 @@ header {
   margin: 15px 0 30px 0;
 }
 
-.link-more a {
+.link-more {
   text-decoration: none;
   color: var(--dark);
 }
 
-.link-more a:hover {
+.link-more:hover {
   color: var(--primary-red);
 }
 
@@ -604,8 +602,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     max-width: var(--max-container-dekstop);
-    /* margin-top: 25px; */
-    /* gap: 30px; */
     box-sizing: border-box;
   }
 
@@ -662,6 +658,7 @@ footer {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0%);
   }
