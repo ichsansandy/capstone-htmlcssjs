@@ -31,7 +31,8 @@
 
 # 📖 Capstone Project : Module 1 - HTML CSS JS <a name="about-project"></a>
 
-**Capstone Project** is a milestone project for microverse student everytime they finish a module
+**Capstone Project** is a milestone project for microverse student everytime they finish a module  <br/>
+You can watch the introduction [video here](https://www.loom.com/share/fe4cab9163964cbcb9e3e17176009a49) 
 
 ## 🛠 Built With <a name="built-with"></a>
 
