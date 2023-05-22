@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function talentCard(talent) {
     return `<div class="talent-card" data-visible="true">
-              <img class="talent-image" src="${talent.img}" alt="" />
+              <img class="talent-image" src="${talent.img}" alt="${talent.name}" />
               <div class="talent-info-wrapper">
                 <h3>${talent.name}</h3>
                 <p class="talent-role text-red">${talent.role}</p>
