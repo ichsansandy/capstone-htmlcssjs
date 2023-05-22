@@ -8,11 +8,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const homeLink = document.querySelector('.home-link');
   const aboutLink = document.querySelector('.about-link');
 
-  if (url === '/index.html' || url === '/') {
+  if (url === '/index.html' || url === '/' || url === '/capstone-htmlcssjs/index.html') {
     homeLink.classList.add('text-red');
     aboutLink.classList.remove('text-red');
   }
-  if (url === '/about.html') {
+  if (url === '/about.html' || url === '/capstone-htmlcssjs/about.html') {
     aboutLink.classList.add('text-red');
     homeLink.classList.remove('text-red');
   }
