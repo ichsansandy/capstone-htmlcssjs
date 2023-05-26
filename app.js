@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const primaryNavigation = document.querySelector('#primary-navigation');
+  const mobileMenuToggle = document.querySelector('#mobile-menu-toggle');
+  const primaryNavigation = document.querySelector('.primary-navigation');
   const navLinkMenu = document.querySelectorAll('.nav-link');
   const body = document.querySelector('body');
   const url = window.location.pathname;
